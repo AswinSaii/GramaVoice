@@ -1,0 +1,228 @@
+[2025-09-28 08:27:43] Test error message from system test
+[2025-09-28 08:27:43] Failed to move uploaded file: test.jpg to uploads/temp/68d8d55fd32eb.jpg
+[2025-09-28 08:31:20] Test error message from comprehensive test
+[2025-09-28 08:31:20] Failed to move uploaded file: test.jpg to uploads/temp/68d8d6385225d.jpg
+[2025-09-28 08:42:41] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                INSERT INTO notifications (user_id, admin_id, super_admin_id, type, title, message, data) 
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            
+[2025-09-28 08:42:41] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 28 in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 28
+[2025-09-28 08:45:24] Uncaught Exception: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 29 in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 29
+[2025-09-28 11:33:25] Prepare exception: Unknown column 'voice_recording' in 'field list' | SQL: INSERT INTO issues (user_id, title, description, photo, voice_recording, location, status) VALUES (?, ?, ?, ?, ?, ?, 'Pending')
+[2025-09-28 11:47:10] Prepare exception: Unknown column 'voice_recording' in 'field list' | SQL: INSERT INTO issues (user_id, title, description, photo, voice_recording, location, status) VALUES (?, ?, ?, ?, ?, ?, 'Pending')
+[2025-09-28 11:47:10] ERROR: Failed to prepare statement: 
+[2025-09-28 11:49:43] Prepare exception: Unknown column 'voice_recording' in 'field list' | SQL: INSERT INTO issues (user_id, title, description, photo, voice_recording, location, status) VALUES (?, ?, ?, ?, ?, ?, 'Pending')
+[2025-09-28 11:49:43] ERROR: Failed to prepare statement: 
+[2025-09-28 11:54:06] Prepare exception: Unknown column 'voice_recording' in 'field list' | SQL: INSERT INTO issues (user_id, title, description, photo, voice_recording, location, status) VALUES (?, ?, ?, ?, ?, ?, 'Pending')
+[2025-09-28 11:54:06] ERROR: Failed to prepare statement: 
+[2025-09-29 15:29:15] Database connection error: No connection could be made because the target machine actively refused it
+[2025-09-29 15:29:31] Database connection error: No connection could be made because the target machine actively refused it
+[2025-09-29 15:29:47] Database connection error: No connection could be made because the target machine actively refused it
+[2025-09-29 15:37:58] [Warning] require_once(../config/db.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\GramaVoice\auth\login.php on line 7 in C:\xampp\htdocs\GramaVoice\auth\login.php on line 7
+[2025-09-29 15:37:58] Uncaught Exception: Failed opening required '../config/db.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\GramaVoice\auth\login.php on line 7 in C:\xampp\htdocs\GramaVoice\auth\login.php on line 7
+[2025-09-29 16:04:48] Failed to move uploaded file: test_image.jpg to uploads/issues/68da9200bb656.jpg
+[2025-09-29 16:05:08] Failed to move uploaded file: test_submission.jpg to uploads/issues/68da9214b5a97.jpg
+[2025-09-29 16:05:44] Uncaught Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\GramaVoice\create_test_photo_issue.php on line 50 in C:\xampp\htdocs\GramaVoice\create_test_photo_issue.php on line 50
+[2025-09-29 17:03:57] Uncaught Exception: Call to undefined function imagecreate() in C:\xampp\htdocs\GramaVoice\create_visible_image.php on line 20 in C:\xampp\htdocs\GramaVoice\create_visible_image.php on line 20
+[2025-09-30 15:46:52] Database connection error: No connection could be made because the target machine actively refused it
+[2025-09-30 15:53:26] [Warning] mysqli::__construct(): Error while reading greeting packet. PID=16532 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22
+[2025-09-30 15:53:26] [Warning] mysqli::__construct(): Error while reading greeting packet. PID=16532 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22
+[2025-09-30 15:53:26] [Warning] mysqli::__construct(): Error while reading greeting packet. PID=16532 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22
+[2025-09-30 15:53:26] [Warning] mysqli::__construct(): Error while reading greeting packet. PID=16532 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22 in C:\xampp\htdocs\GramaVoice\config\db.php on line 22
+[2025-09-30 15:53:26] Database connection error: MySQL server has gone away
+[2025-09-30 15:53:26] Database connection error: MySQL server has gone away
+[2025-09-30 15:53:26] Database connection error: MySQL server has gone away
+[2025-09-30 15:53:26] Database connection error: MySQL server has gone away
+[2025-09-30 15:53:26] Database connection error: MySQL server has gone away
+[2025-10-02 12:56:16] Login attempt with non-existent phone: 9281451522
+[2025-10-02 12:56:23] Login attempt with non-existent phone: 9876543210
+[2025-10-02 12:56:46] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE user_id = ? AND is_read = FALSE
+            
+[2025-10-02 12:56:53] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE user_id = ? AND is_read = FALSE
+            
+[2025-10-02 12:56:59] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: SELECT * FROM notifications WHERE user_id = ? ORDER BY created_at DESC LIMIT ?
+[2025-10-02 12:57:08] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: SELECT * FROM notifications WHERE user_id = ? ORDER BY created_at DESC LIMIT ?
+[2025-10-02 12:57:12] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE user_id = ? AND is_read = FALSE
+            
+[2025-10-02 12:58:34] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE admin_id = ? AND is_read = FALSE
+            
+[2025-10-02 12:58:34] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 197 in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 197
+[2025-10-02 12:58:49] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\issue_management.php on line 890 in C:\xampp\htdocs\GramaVoice\admin\issue_management.php on line 890
+[2025-10-02 12:58:49] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\issue_management.php on line 890 in C:\xampp\htdocs\GramaVoice\admin\issue_management.php on line 890
+[2025-10-02 12:58:53] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\complaints.php on line 906 in C:\xampp\htdocs\GramaVoice\admin\complaints.php on line 906
+[2025-10-02 12:58:53] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\complaints.php on line 906 in C:\xampp\htdocs\GramaVoice\admin\complaints.php on line 906
+[2025-10-02 12:58:58] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: SELECT * FROM notifications WHERE admin_id = ? ORDER BY created_at DESC LIMIT ?
+[2025-10-02 12:59:01] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE admin_id = ? AND is_read = FALSE
+            
+[2025-10-02 12:59:01] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 197 in C:\xampp\htdocs\GramaVoice\includes\notifications.php on line 197
+[2025-10-02 13:02:17] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE user_id = ? AND is_read = FALSE
+            
+[2025-10-02 13:03:00] Prepare exception: Table 'grama_voice.notifications' doesn't exist | SQL: 
+                SELECT COUNT(*) as count 
+                FROM notifications 
+                WHERE user_id = ? AND is_read = FALSE
+            
+[2025-10-02 13:05:24] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:05:24] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',
+    'ALTER TABLE issues ADD COLUMN voice_recording LONGTEXT AFTER photo' at line 1 | SQL: ',
+    'ALTER TABLE issues ADD COLUMN voice_recording LONGTEXT AFTER photo
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+))' at line 1 | SQL: '
+))
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL' at line 1 | SQL: PREPARE stmt FROM @sql
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Unknown prepared statement handler (stmt) given to EXECUTE | SQL: EXECUTE stmt
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE | SQL: DEALLOCATE PREPARE stmt
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',
+    'ALTER TABLE issues ADD COLUMN latitude DECIMAL(10, 8) NULL AFTER loc...' at line 1 | SQL: ',
+    'ALTER TABLE issues ADD COLUMN latitude DECIMAL(10, 8) NULL AFTER location, ADD COLUMN longitude DECIMAL(11, 8) NULL AFTER latitude, ADD COLUMN location_accuracy DECIMAL(8, 2) NULL AFTER longitude
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+))' at line 1 | SQL: '
+))
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL' at line 1 | SQL: PREPARE stmt FROM @sql
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Unknown prepared statement handler (stmt) given to EXECUTE | SQL: EXECUTE stmt
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE | SQL: DEALLOCATE PREPARE stmt
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',
+    'ALTER TABLE panchayat_admins ADD COLUMN status ENUM("active", "inact...' at line 1 | SQL: ',
+    'ALTER TABLE panchayat_admins ADD COLUMN status ENUM("active", "inactive") DEFAULT "active" AFTER village_name
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+))' at line 1 | SQL: '
+))
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL' at line 1 | SQL: PREPARE stmt FROM @sql
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Unknown prepared statement handler (stmt) given to EXECUTE | SQL: EXECUTE stmt
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE | SQL: DEALLOCATE PREPARE stmt
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Key column 'latitude' doesn't exist in table | SQL: CREATE INDEX IF NOT EXISTS idx_issues_location ON issues(latitude, longitude)
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Table 'grama_voice.notification_preferences' doesn't exist | SQL: CREATE INDEX IF NOT EXISTS idx_notification_preferences_user_id ON notification_preferences(user_id)
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Table 'grama_voice.notification_preferences' doesn't exist | SQL: CREATE INDEX IF NOT EXISTS idx_notification_preferences_admin_id ON notification_preferences(admin_id)
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:16] Query exception: Table 'grama_voice.notification_preferences' doesn't exist | SQL: CREATE INDEX IF NOT EXISTS idx_notification_preferences_super_admin_id ON notification_preferences(super_admin_id)
+[2025-10-02 13:09:16] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 13:09:58] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:09:58] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:12:26] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:12:26] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:17:03] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 13:17:03] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:14:41] Uncaught Exception: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\GramaVoice\user\submit_issue.php on line 90 in C:\xampp\htdocs\GramaVoice\user\submit_issue.php on line 90
+[2025-10-02 14:17:27] Prepare exception: Unknown column 'voice_recording' in 'where clause' | SQL: SELECT COUNT(*) as voice_count FROM issues WHERE user_id = ? AND voice_recording IS NOT NULL
+[2025-10-02 14:17:27] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294 in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294
+[2025-10-02 14:17:29] Prepare exception: Unknown column 'voice_recording' in 'where clause' | SQL: SELECT COUNT(*) as voice_count FROM issues WHERE user_id = ? AND voice_recording IS NOT NULL
+[2025-10-02 14:17:29] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294 in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294
+[2025-10-02 14:18:14] Prepare exception: Unknown column 'voice_recording' in 'where clause' | SQL: SELECT COUNT(*) as voice_count FROM issues WHERE user_id = ? AND voice_recording IS NOT NULL
+[2025-10-02 14:18:14] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294 in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294
+[2025-10-02 14:19:36] Prepare exception: Unknown column 'voice_recording' in 'where clause' | SQL: SELECT COUNT(*) as voice_count FROM issues WHERE user_id = ? AND voice_recording IS NOT NULL
+[2025-10-02 14:19:36] Uncaught Exception: Call to a member function bind_param() on bool in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294 in C:\xampp\htdocs\GramaVoice\includes\functions.php on line 294
+[2025-10-02 14:22:04] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:22:04] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:22:04] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:45:51] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:45:51] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:45:51] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',
+    'ALTER TABLE issues ADD COLUMN voice_recording LONGTEXT AFTER photo' at line 1 | SQL: ',
+    'ALTER TABLE issues ADD COLUMN voice_recording LONGTEXT AFTER photo
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+))' at line 1 | SQL: '
+))
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL' at line 1 | SQL: PREPARE stmt FROM @sql
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: Unknown prepared statement handler (stmt) given to EXECUTE | SQL: EXECUTE stmt
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE | SQL: DEALLOCATE PREPARE stmt
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',
+    'ALTER TABLE issues ADD COLUMN latitude DECIMAL(10, 8) NULL AFTER loc...' at line 1 | SQL: ',
+    'ALTER TABLE issues ADD COLUMN latitude DECIMAL(10, 8) NULL AFTER location, ADD COLUMN longitude DECIMAL(11, 8) NULL AFTER latitude, ADD COLUMN location_accuracy DECIMAL(8, 2) NULL AFTER longitude
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+))' at line 1 | SQL: '
+))
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL' at line 1 | SQL: PREPARE stmt FROM @sql
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: Unknown prepared statement handler (stmt) given to EXECUTE | SQL: EXECUTE stmt
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE | SQL: DEALLOCATE PREPARE stmt
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '',
+    'ALTER TABLE panchayat_admins ADD COLUMN status ENUM("active", "inact...' at line 1 | SQL: ',
+    'ALTER TABLE panchayat_admins ADD COLUMN status ENUM("active", "inactive") DEFAULT "active" AFTER village_name
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+))' at line 1 | SQL: '
+))
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL' at line 1 | SQL: PREPARE stmt FROM @sql
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: Unknown prepared statement handler (stmt) given to EXECUTE | SQL: EXECUTE stmt
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:52:17] Query exception: Unknown prepared statement handler (stmt) given to DEALLOCATE PREPARE | SQL: DEALLOCATE PREPARE stmt
+[2025-10-02 14:52:17] [Warning] Undefined property: Database::$error in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75 in C:\xampp\htdocs\GramaVoice\setup_database.php on line 75
+[2025-10-02 14:54:28] Query exception: Table 'grama_voice.non_existent_table' doesn't exist | SQL: SELECT * FROM non_existent_table
+[2025-10-02 14:55:51] Query exception: Table 'grama_voice.non_existent_table' doesn't exist | SQL: SELECT * FROM non_existent_table
+[2025-10-02 14:55:51] Prepare exception: Unknown column 'invalid_column' in 'where clause' | SQL: SELECT * FROM users WHERE invalid_column = ?
+[2025-10-02 14:55:51] Invalid file type attempted: application/x-php
+[2025-10-02 14:55:51] File size too large: 10485760 bytes
+[2025-10-02 14:55:51] Test error message 1759409751
+[2025-10-02 14:55:51] Test context: Test exception in C:\xampp\htdocs\GramaVoice\test_error_handling.php on line 208
+[2025-10-02 14:59:35] Invalid file type attempted: application/x-php
+[2025-10-02 15:08:25] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 15:08:25] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 15:08:25] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 15:09:50] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-02 15:09:50] [Deprecated] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323 in C:\xampp\htdocs\GramaVoice\admin\dashboard.php on line 1323
+[2025-10-20 06:22:28] Registration attempt with existing phone: 9281451522
+[2025-10-20 12:14:25] Prepare exception: Unknown column 'email' in 'where clause' | SQL: SELECT id FROM panchayat_admins WHERE email = ? AND id != ?
+[2025-10-20 12:14:47] Prepare exception: Unknown column 'email' in 'where clause' | SQL: SELECT id FROM panchayat_admins WHERE email = ? AND id != ?
+[2025-10-20 12:18:05] Prepare exception: Unknown column 'email' in 'field list' | SQL: UPDATE panchayat_admins SET name = ?, phone = ?, village_name = ?, email = ?, updated_at = NOW() WHERE id = ?
+[2025-10-20 12:18:05] APPLICATION ERROR: Prepare failed for admin profile update:  in C:\xampp\htdocs\GramaVoice\admin\profile.php on line 65
+[2025-10-20 12:18:17] Prepare exception: Unknown column 'email' in 'where clause' | SQL: SELECT id FROM panchayat_admins WHERE email = ? AND id != ?
+[2025-10-20 12:22:41] Prepare exception: Unknown column 'email' in 'where clause' | SQL: SELECT id FROM panchayat_admins WHERE email = ? AND id != ?
+[2025-10-20 12:22:46] Prepare exception: Unknown column 'email' in 'field list' | SQL: UPDATE panchayat_admins SET name = ?, phone = ?, village_name = ?, email = ?, updated_at = NOW() WHERE id = ?
+[2025-10-20 12:22:46] APPLICATION ERROR: Prepare failed for admin profile update:  in C:\xampp\htdocs\GramaVoice\admin\profile.php on line 71
+[2025-10-20 12:22:59] Prepare exception: Unknown column 'email' in 'field list' | SQL: UPDATE users SET name = ?, phone = ?, email = ?, address = ? WHERE id = ?
+[2025-10-20 12:22:59] APPLICATION ERROR: Prepare failed for user profile update:  in C:\xampp\htdocs\GramaVoice\user\profile.php on line 45
+[2025-10-20 12:23:02] Prepare exception: Unknown column 'email' in 'field list' | SQL: UPDATE users SET name = ?, phone = ?, email = ?, address = ? WHERE id = ?
+[2025-10-20 12:23:02] APPLICATION ERROR: Prepare failed for user profile update:  in C:\xampp\htdocs\GramaVoice\user\profile.php on line 45
+[2025-10-20 12:23:10] Prepare exception: Unknown column 'email' in 'field list' | SQL: UPDATE users SET name = ?, phone = ?, email = ?, address = ? WHERE id = ?
+[2025-10-20 12:23:10] APPLICATION ERROR: Prepare failed for user profile update:  in C:\xampp\htdocs\GramaVoice\user\profile.php on line 45
+[2025-10-20 12:23:21] Prepare exception: Unknown column 'email' in 'where clause' | SQL: SELECT id FROM panchayat_admins WHERE email = ? AND id != ?
+[2025-10-20 12:33:45] Prepare exception: Unknown column 'email' in 'field list' | SQL: UPDATE users SET name = ?, phone = ?, email = ?, address = ? WHERE id = ?
+[2025-10-20 12:33:45] APPLICATION ERROR: Prepare failed for user profile update:  in C:\xampp\htdocs\GramaVoice\user\profile.php on line 45

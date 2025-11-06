@@ -1,0 +1,40 @@
+# Protect uploads directory
+Options -Indexes
+
+# Allow access to uploaded files but prevent PHP execution
+<Files "*.php">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "*.phtml">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "*.php3">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "*.php4">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files "*.php5">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Allow only specific image types
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Block access to other file types
+<FilesMatch "\.(txt|log|sql|bak|tmp)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>

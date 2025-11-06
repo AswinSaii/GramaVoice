@@ -1,0 +1,12 @@
+# Protect log files from direct access
+Order deny,allow
+Deny from all
+
+# Prevent directory browsing
+Options -Indexes
+
+# Block access to all files in this directory
+<Files "*">
+    Order deny,allow
+    Deny from all
+</Files>

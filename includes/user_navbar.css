@@ -1,0 +1,228 @@
+/* User Navbar Styles - Reusable Component */
+
+/* Top Navigation Bar */
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-color);
+}
+
+.navbar-logo {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--orange), var(--purple), var(--success-color), var(--blue));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar-hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--gray-600);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-hamburger:hover {
+    background: var(--gray-100);
+    color: var(--gray-900);
+}
+
+.navbar-hamburger.active {
+    color: var(--primary-color);
+}
+
+/* User Info Section */
+.user-info-section {
+    margin-top: 80px;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.user-welcome {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--info-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.user-details h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.25rem;
+}
+
+.user-details p {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+}
+
+/* Mobile Overlay */
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Hamburger Animation */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 18px;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: currentColor;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top-navbar {
+        padding: 1rem;
+    }
+
+    .user-info-section {
+        padding: 1rem;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-logo {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+
+    .user-info-section {
+        padding: 1rem;
+        margin-top: 65px;
+    }
+
+    .user-details h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-navbar {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .navbar-logo {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+    }
+
+    .user-info-section {
+        padding: 0.75rem;
+        margin-top: 60px;
+    }
+
+    .user-details h2 {
+        font-size: 1.1rem;
+    }
+
+    .user-details p {
+        font-size: 0.8rem;
+    }
+
+    .navbar-hamburger {
+        padding: 0.25rem;
+    }
+
+    .hamburger {
+        width: 20px;
+        height: 15px;
+    }
+}
